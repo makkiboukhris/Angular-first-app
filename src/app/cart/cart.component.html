@@ -1,0 +1,6 @@
+<h1>my cart:</h1>
+<div>
+    <ul *ngFor="let item of items">
+        <li>{{item.name + ":  quantity: " + item.qtty + " x  "+ item.price + " Euro  //total=  "+ item.qtty*item.price + " Euro"}}</li>
+    </ul>
+</div>

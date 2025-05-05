@@ -1,0 +1,10 @@
+.header-list{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.header-item{
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+<div class="card">
+    <img [src]="product.imagePath" class="card-img-top" [alt]="product.name">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text">{{ product.description }}</p>
+      <p class="text-muted">{{ product.category }}</p>
+      <p class="font-weight-bold">${{ product.price.toFixed(2) }}</p>
+      <button class="btn btn-outline-secondary btn-sm" (click)="decreaseQuantity()">-</button>
+      <input type="number" 
+             class="form-control text-center" 
+             min="1" 
+             [value]="qtty"
+             style="width: 50px; display: inline-block;">
+      <button class="btn btn-outline-secondary btn-sm" (click)="increaseQuantity()">+</button>
+      <button (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
